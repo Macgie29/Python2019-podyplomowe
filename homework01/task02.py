@@ -6,7 +6,17 @@
 """
 
 def days_in_year(year):
-    pass
+    if year % 4 == 0:
+        days = 366
+    elif year % 100 == 0:
+        days = 365
+    elif year % 400 == 0:
+        days = 366
+    else:
+        days = 365
+    return days
+
+print(days_in_year(2020))
 
 input = 2019
 output = 365

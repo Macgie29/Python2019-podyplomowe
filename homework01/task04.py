@@ -7,7 +7,10 @@ Jeśli podany argument jest mniejszy od 1 powinna być zwracana wartość 0.
 """
 
 def sum_from_one_to_n(n):
-    pass
+    score = sum(range(n+1))
+    return score
+
+print(sum_from_one_to_n(4))
 
 input = 999
 output = 499500
