@@ -9,8 +9,12 @@ Np. leet('leet') powinno zwrócić '1337'.
 
 
 def leet_speak(text):
-    pass
+    dict = {"l": "1", "e": "3",  "t": "7"}
+    for letter, number in dict.items():
+        text = text.replace(letter, number)
+    return text
+
 
 input = 'leet'
 output = '1337'
-
+print(leet_speak(input))
